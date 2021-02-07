@@ -121,9 +121,8 @@ final class BackTrackLineSearch {
         alamin = relTolx / test;
         alam = 1.0;
         oldAlam = 0.0;
-        int iteration = 0;
         // look for step size in direction given by "line"
-        for (iteration = 0; iteration < maxIterations; iteration++) {
+        for (int iteration = 0; iteration < maxIterations; iteration++) {
             // x = oldParameters + alam*line
             // initially, alam = 1.0, i.e. take full Newton step
             if (logger.isLoggable(Level.FINE)) {
@@ -220,9 +219,6 @@ final class BackTrackLineSearch {
                 logger.fine("tmplam:" + tmplam);
             }
             alam = Math.max(tmplam, .1 * alam); // lambda >= .1*Lambda_1
-        }
-        if (iteration >= maxIterations) {
-            throw new IllegalStateException("Too many iterations.");
         }
         return 0.0;
     }
