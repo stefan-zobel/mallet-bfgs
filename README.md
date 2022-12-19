@@ -1,4 +1,4 @@
-![status](https://github.com/stefan-zobel/mallet-bfgs/actions/workflows/codeql.yml/badge.svg)
+[![CodeQL](https://github.com/stefan-zobel/mallet-bfgs/actions/workflows/codeql.yml/badge.svg)](https://github.com/stefan-zobel/mallet-bfgs/actions/workflows/codeql.yml)
 
 # mallet-bfgs
 
