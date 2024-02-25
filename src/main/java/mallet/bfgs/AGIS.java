@@ -21,8 +21,8 @@ import mallet.bfgs.Optimizable;
  *         href="mailto:ryantm@cis.upenn.edu">ryantm@cis.upenn.edu</a>
  */
 public class AGIS implements Optimizer {
-    private static Logger logger = Logger
-            .getLogger("edu.umass.cs.mallet.base.minimize.AGIS");
+
+    private static Logger logger = Logger.getLogger(AGIS.class.getName());
 
     double initialStepSize = 1;
     double alpha;
